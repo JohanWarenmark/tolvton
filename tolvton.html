@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tolvton.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+        h1 {
+        font-family: 'Montserrat', sans-serif;
+        
+        text-align: center;
+        }
+        
+    </style>
+    <title>Tolvtonsgenerator</title>
+</head>
+<body>
+
+<!-- En wrap där allt finns (titel + knapp + siffror) -->    
+    <div class="wrap">
+        <h1>Tolvtonsgenerator</h1>
+
+        <hr><br>
+
+<!-- En knapp som kallar på funktionen generator -->
+        <button type="button" class="button" onclick="generator()">Tryck för en ny rad</button>
+
+        <br><br><br>
+
+<!-- Här visas siffrorna som generator-funktionen spottar ut, ID av samma namn tar emot funktionen -->       
+        <p id="generator"></p>
+        <br><br>
+
+<!-- En knapp som kallar på funktionen retrograd -->
+        <button id ="retrogradn" class="button" onclick="retrograd()"></button>
+        <br><br>
+
+<!-- Försök till att göra siffror till bokstäver -->
+        <button id="bokstav" class="button" onclick="bokstav()">Visa toner</button>
+        <br><br>
+        <p id="tonnamn"></p>
+
+    </div>
+ 
+  <script src="tolvton2.js"></script>  
+</body>
+</html>
